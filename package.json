@@ -8,7 +8,8 @@
     "prepare": "npm run build",
     "prebuild": "npm run clean",
     "build": "tsc -p tsconfig.dist.json",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "main": "./dist/index.js",
   "typings": "dist/index",
@@ -37,7 +38,8 @@
     "react": "16.8.0-alpha.1",
     "semantic-release": "^15.13.3",
     "ts-jest": "^23.10.5",
-    "typescript": "^3.2.4"
+    "typescript": "^3.2.4",
+    "travis-deploy-once": "^5.0.11"
   },
   "peerDependencies": {
     "react": ">= 16.8.0-alpha.1"
