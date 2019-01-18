@@ -38,6 +38,10 @@ export default function MyComponent() {
 }
 ```
 
+## Setup
+
+You need React in `>= 16.8.0-alpha.1`. Besides just run `npm install --save reactive-graphql-react` and you are ready to go.
+
 ## License
 
 MIT
