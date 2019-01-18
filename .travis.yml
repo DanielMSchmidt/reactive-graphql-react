@@ -5,8 +5,8 @@ cache:
 notifications:
   email: false
 node_js:
-  - 'latest'
-  - '10'
+  - 'node'
+  - 'lts/*'
 after_success:
   - npm run travis-deploy-once "npm run semantic-release"
 branches:
