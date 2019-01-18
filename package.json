@@ -1,0 +1,49 @@
+{
+  "name": "reactive-graphql-react",
+  "version": "0.0.0-development",
+  "description": "React bindings for reactive-graphql",
+  "scripts": {
+    "test": "jest",
+    "clean": "rimraf dist",
+    "prepare": "npm run build",
+    "prebuild": "npm run clean",
+    "build": "tsc -p tsconfig.dist.json",
+    "semantic-release": "semantic-release"
+  },
+  "main": "./dist/index.js",
+  "typings": "dist/index",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DanielMSchmidt/reactive-graphql-react.git"
+  },
+  "keywords": [
+    "graphql",
+    "react",
+    "reactive-graphql",
+    "rxjs"
+  ],
+  "author": "Daniel Schmidt <danielmschmidt92@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DanielMSchmidt/reactive-graphql-react/issues"
+  },
+  "homepage": "https://github.com/DanielMSchmidt/reactive-graphql-react#readme",
+  "devDependencies": {
+    "@types/jest": "^23.3.12",
+    "jest": "^23.6.0",
+    "react": "16.8.0-alpha.1",
+    "semantic-release": "^15.13.3",
+    "ts-jest": "^23.10.5",
+    "typescript": "^3.2.4"
+  },
+  "peerDependencies": {
+    "react": ">= 16.8.0-alpha.1"
+  },
+  "dependencies": {
+    "reactive-graphql": "^2.0.0",
+    "rxjs": "^6.3.3"
+  }
+}
