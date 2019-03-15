@@ -1,24 +1,31 @@
 import { useMemo } from "react";
-import { GraphQLSchema } from "graphql";
+import { GraphQLSchema, DocumentNode } from "graphql";
 import graphql from "reactive-graphql";
-import gql from "graphql-tag";
 
 import useObservable from "./useObservable";
 
-export default function getReactiveGraphqlReact(schema: GraphQLSchema) {
-  return function reactiveGraphqlReact(query: string, context?: Object) {
-    const observable = useMemo(
-      () =>
-        graphql(
-          gql`
-            ${query}
-          `,
-          schema,
-          context || {}
-        ),
-      [query, JSON.stringify(context)]
-    );
+type ReactiveGraphQLResponse = {
+  data: any;
+};
 
-    return useObservable(observable, null);
+export default function getReactiveGraphqlReact(schema: GraphQLSchema) {
+  if (!(schema instanceof GraphQLSchema)) {
+    throw new Error("schema needs to be a GraphQLSchema");
+  }
+
+  return function useReactiveGraphqlReact(
+    query: DocumentNode,
+    context?: Object
+  ) {
+    const observable = useMemo(() => graphql(query, schema, context || {}), [
+      query,
+      JSON.stringify(context)
+    ]);
+
+    const [data, errors] = useObservable<ReactiveGraphQLResponse, any[]>(
+      observable,
+      null
+    );
+    return [data === null ? data : data.data, errors];
   };
 }
