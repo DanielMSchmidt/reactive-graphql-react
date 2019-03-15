@@ -35,8 +35,12 @@
   "devDependencies": {
     "@types/jest": "^23.3.12",
     "graphql-tag": "^2.10.1",
+    "graphql-tools": "^4.0.4",
     "jest": "^23.6.0",
+    "jest-react": "^0.6.4",
+    "prettier": "^1.16.4",
     "react": "16.8.0-alpha.1",
+    "react-test-renderer": "^16.8.4",
     "react-testing-library": "^5.4.4",
     "semantic-release": "^15.13.3",
     "travis-deploy-once": "^5.0.11",
@@ -44,7 +48,7 @@
     "typescript": "^3.2.4"
   },
   "peerDependencies": {
-    "react": ">= 16.8.0-alpha.1"
+    "react": ">= 16.8.0"
   },
   "dependencies": {
     "reactive-graphql": "^2.0.0",
