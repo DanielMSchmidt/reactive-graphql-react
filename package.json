@@ -44,7 +44,7 @@
     "semantic-release": "15.13.31",
     "travis-deploy-once": "5.0.11",
     "ts-jest": "24.2.0",
-    "typescript": "3.7.3"
+    "typescript": "3.7.4"
   },
   "peerDependencies": {
     "react": ">= 16.8.0"
