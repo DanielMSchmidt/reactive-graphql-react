@@ -35,7 +35,7 @@
   "devDependencies": {
     "@types/jest": "25.1.2",
     "graphql-tag": "2.10.3",
-    "graphql-tools": "4.0.6",
+    "graphql-tools": "4.0.7",
     "jest": "25.1.0",
     "jest-react": "0.10.0",
     "prettier": "1.19.1",
