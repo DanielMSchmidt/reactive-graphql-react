@@ -41,7 +41,7 @@
     "prettier": "2.0.5",
     "react": "16.13.1",
     "react-test-renderer": "16.13.1",
-    "semantic-release": "17.0.7",
+    "semantic-release": "17.0.8",
     "travis-deploy-once": "5.0.11",
     "ts-jest": "26.0.0",
     "typescript": "3.9.3"
