@@ -50,7 +50,7 @@
     "react": ">= 16.8.0"
   },
   "dependencies": {
-    "reactive-graphql": "^2.0.0",
+    "reactive-graphql": "^4.0.0",
     "rxjs": "^7.0.0"
   }
 }
