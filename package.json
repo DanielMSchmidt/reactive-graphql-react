@@ -33,7 +33,7 @@
   },
   "homepage": "https://github.com/DanielMSchmidt/reactive-graphql-react#readme",
   "devDependencies": {
-    "@types/jest": "27.4.1",
+    "@types/jest": "27.5.0",
     "graphql-tag": "2.12.6",
     "graphql-tools": "8.2.8",
     "jest": "28.0.3",
