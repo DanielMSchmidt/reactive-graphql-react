@@ -43,7 +43,7 @@
     "react-test-renderer": "18.2.0",
     "semantic-release": "21.1.2",
     "travis-deploy-once": "5.0.11",
-    "ts-jest": "29.1.0",
+    "ts-jest": "29.4.12",
     "typescript": "5.1.5"
   },
   "peerDependencies": {
